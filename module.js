@@ -17,7 +17,7 @@ Ec2Platform.prototype.startInstance = function(params, callback) {
 			var instanceId = data.Instances[0].InstanceId;
 			callback(null, instanceId);
 		}
-	}
+	});
 };
 
 Ec2Platform.prototype.stopInstance = function(instanceId) {
