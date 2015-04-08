@@ -1,4 +1,6 @@
-module.exports = Ec2Platform;
+module.exports = function(config) {
+	return new Ec2Platform(config);
+};
 
 function Ec2Platform(config) {
 	var AWS = require('aws-sdk');
