@@ -5,7 +5,8 @@
     "node": ">=0.8.9"
   },
   "dependencies": {
-    "aws-sdk": "2.1.x"
+    "aws-sdk": "2.1.x",
+    "path": "*"
   },
   "main": "./module.js"
 }
