@@ -1,8 +1,8 @@
-module.exports = function(config) {
-	return new Ec2Platform(config);
+module.exports = function(plumber, config) {
+	return new Ec2Platform(plumber, config);
 };
 
-function Ec2Platform(config) {
+function Ec2Platform(plumber, config) {
 	var AWS = require('aws-sdk');
 	if(config)
 		AWS.config = config;
